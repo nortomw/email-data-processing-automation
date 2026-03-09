@@ -1,4 +1,4 @@
-# email-data-processing-automation
+# Email Data Processing Automation
 
 ## Overview (English)
 
@@ -55,7 +55,7 @@ The script:
 
 ## Workflow
 
-```id="workflow1"
+```
 Email files (.eml)
         ↓
 Email processing
@@ -73,7 +73,9 @@ Excel outputs
 
 ## Project Structure
 
-```id="structure1"
+The repository is organized to separate input data, processing logic and generated outputs.
+
+```
 email-data-processing-automation
 │
 ├─ emails
@@ -91,20 +93,24 @@ email-data-processing-automation
 └─ extract_info.py
 ```
 
+This structure allows the automation workflow to process email files, enrich the extracted data using the reference dataset and generate structured Excel outputs.
+
 ---
 
-## Outputs
+## Example Output
 
-The script generates multiple outputs depending on the processing results:
+The script generates several Excel outputs that organize the processed information in different ways.
 
 * **output_all.xlsx**
-  Consolidated dataset containing all processed records.
+  Contains the consolidated dataset with all processed records extracted from the email files and enriched with the reference dataset.
 
 * **output_1.xlsx / output_n.xlsx**
-  Excel files generated for each responsible person.
+  Individual Excel files generated for each responsible person, containing the records associated with them.
 
 * **unmatched_emails.xlsx**
-  Records that could not be matched with the reference dataset.
+  Records extracted from emails that could not be matched with the reference dataset.
+
+These outputs allow the information extracted from emails to be organized and analyzed efficiently.
 
 ---
 
@@ -127,7 +133,7 @@ All datasets and email examples included here have been anonymized to remove any
 
 ## Descripción (Español)
 
-Este proyecto muestra un flujo automatizado que procesa información recibida por archivos de correo electrónico, extrae datos estructurados, los enriquece utilizando un dataset de referencia y genera informes organizados en Excel.
+Este proyecto muestra un flujo automatizado que procesa información recibida mediante archivos de correo electrónico, extrae datos estructurados, los enriquece utilizando un dataset de referencia y genera informes organizados en Excel.
 
 El objetivo es automatizar tareas manuales repetitivas y transformar contenido no estructurado de emails en datasets organizados que puedan utilizarse para análisis o reporting.
 
@@ -175,6 +181,49 @@ El script:
 
    * un **dataset consolidado con todos los registros procesados**
    * **archivos Excel individuales agrupados por responsable**
+
+---
+
+## Estructura del proyecto
+
+El repositorio está organizado para separar los datos de entrada, la lógica de procesamiento y los resultados generados.
+
+```
+email-data-processing-automation
+│
+├─ emails
+│   ├─ email_type_A.eml
+│   ├─ email_type_B.eml
+│   └─ email_type_C.eml
+│
+├─ results
+│   ├─ output_all.xlsx
+│   ├─ output_1.xlsx
+│   ├─ output_n.xlsx
+│   └─ unmatched_emails.xlsx
+│
+├─ reference_dataset.xlsx
+└─ extract_info.py
+```
+
+Esta estructura permite que el flujo automatizado procese los emails, enriquezca la información con el dataset de referencia y genere salidas organizadas en Excel.
+
+---
+
+## Ejemplo de salida
+
+El script genera varios archivos Excel que organizan la información procesada de diferentes maneras.
+
+* **output_all.xlsx**
+  Contiene el dataset consolidado con todos los registros procesados extraídos de los emails y enriquecidos con el dataset de referencia.
+
+* **output_1.xlsx / output_n.xlsx**
+  Archivos Excel individuales generados para cada responsable, que contienen los registros asociados a cada uno.
+
+* **unmatched_emails.xlsx**
+  Registros extraídos de los emails que no pudieron cruzarse con el dataset de referencia.
+
+Estas salidas permiten organizar y analizar de forma eficiente la información extraída de los emails.
 
 ---
 
