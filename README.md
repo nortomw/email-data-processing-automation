@@ -122,6 +122,12 @@ These outputs allow the information extracted from emails to be organized and an
 
 ---
 
+## Usage Context
+
+This script was developed for a specific operational workflow and processes email formats used in that environment.
+The repository demonstrates the automation approach and data processing logic, but the included examples have been anonymized and simplified to preserve confidentiality.
+
+---
 ## Data Privacy
 
 This repository is based on a real workflow scenario.
@@ -232,6 +238,13 @@ Estas salidas permiten organizar y analizar de forma eficiente la información e
 * Python
 * Pandas
 * Procesamiento de datos en Excel
+
+---
+
+## Contexto de uso
+
+Este script fue desarrollado para un flujo operativo específico y procesa formatos de email utilizados en ese entorno.
+El repositorio muestra el enfoque de automatización y la lógica de procesamiento de datos, pero los ejemplos incluidos han sido anonimizados y simplificados para preservar la confidencialidad.
 
 ---
 
